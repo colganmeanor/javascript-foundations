@@ -5,14 +5,14 @@ class VendingMachine {
     this.snacks = [];
   }
   addSnacks(snack) {
-    for (var i = 0; i < this.snacks.length; i++) {
-      if (this.snacks[i] !== snack) {
-        this.snacks.push(snack)
-      } else {
-        return 'Sorry, that snack is already stocked! Try adding a different snack.'
-      }
-    }
+  for (var i = 0; i < this.snacks.length; i++){
+    if (this.snacks[i].name === snack.name){
+      return 'Sorry, that snack is already stocked! Try adding a different snack.'
+  } else {
+    this.snacks.push(snack)
   }
+}
+}
 }
 
 module.exports = VendingMachine;

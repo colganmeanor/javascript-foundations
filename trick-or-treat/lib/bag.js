@@ -10,7 +10,7 @@ class Bag {
   }
   contains(candy) {
     for (var i = 0; i < this.candies.length; i++) {
-      if (this.candies[i].type === candy) {
+      if (this.candies[i].type === candy){
         return true;
       } else {
         return false;
@@ -18,6 +18,5 @@ class Bag {
     }
   }
 }
-
 
 module.exports = Bag

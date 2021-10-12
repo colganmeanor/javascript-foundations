@@ -44,6 +44,7 @@ describe("VendingMachine", function() {
 
 
     var firstStock = machine.addSnacks(candyBar1);
+    console.log(candyBar1)
     assert.equal(machine.snacks.length, 1);
 
     var sencondStock = machine.addSnacks(candyBar2);

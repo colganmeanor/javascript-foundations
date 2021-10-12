@@ -1,10 +1,8 @@
-class Costume {
+class Costume{
   constructor(style){
     this.style = style;
   }
 }
 
 
-
-
-module.exports = Costume
+module.exports = Costume;

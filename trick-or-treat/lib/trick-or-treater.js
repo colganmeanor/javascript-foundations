@@ -1,13 +1,13 @@
-class TrickOrTreater {
-  constructor(costume, bag) {
+class TrickOrTreater{
+  constructor(costume, bag){
     this.dressedUpAs = costume.style;
     this.bag = bag;
     this.hasCandy = false
     this.countCandies = 0;
   }
-  putCandyInBag(){
+  putCandyInBag(candy){
     this.hasCandy = true;
-    this.bag.fill();
+    this.bag.fill(candy)
     this.countCandies++;
   }
   eat(){
@@ -15,5 +15,7 @@ class TrickOrTreater {
     this.bag.candies.shift();
   }
 }
+
+
 
 module.exports = TrickOrTreater
